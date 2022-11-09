@@ -6,15 +6,29 @@ const userSchema = mongoose.Schema({
     required: true,
   },
 
-  email: {
+  phone: {
     type: String,
     required: true,
   },
+  village: {
+    type: String,
+    required: true,
+  },
+  district: {
+    typeString,
+    required: true,
+  },
+  position: {
+    type: String,
+    enum: ["worker", "employer"],
+    required: true,
+  },
+
   role: {
     type: String,
     enum: ["worker", "employer", "admin"],
   },
 });
-const User = new mongoose.model("users", userSchema);
+const User = mongoose.model("users", userSchema);
 
 module.exports = User;
