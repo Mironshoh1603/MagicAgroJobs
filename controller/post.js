@@ -31,7 +31,6 @@ const update = async (req, res, next) => {
   const newPost = await Post.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
   });
-
   res.status(203).json(newPost);
 };
 
