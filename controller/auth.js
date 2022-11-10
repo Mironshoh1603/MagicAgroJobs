@@ -1,30 +1,39 @@
-const User = require("./../model/user");
-const bcrypt = require("bcryptjs");
-const createError = require("./error");
+const User = require("../models/userModel");
+const catchErrorAsync = require("../utility/catchErrorAsync");
 const jwt = require("jsonwebtoken");
-const signUp = async (req, res, next) => {
-  try {
-    const salt = bcrypt.genSaltSync(10);
-    const hash = bcrypt.hashSync(req.body.password, salt);
-    const newUser = new User({ ...req.body, password: hash });
-    await newUser.save({ validateBeforeSave: true });
-    const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);
+const AppError = require("../utility/appError");
+const bcrypt = require("bcryptjs");
+const mail = require("../utility/mail");
+const crypto = require("crypto");
 
-    const { password, ...others } = newUser._doc;
-    res
-      .cookie("token", token, {
-        httpOnly: true,
-      })
-      .status(200)
-      .json({
-        token,
-        others,
-      });
-  } catch (err) {
-    console.log(err);
-    next(createError(404, "not found"));
-  }
+const createToken = (id) => {
+  return jwt.sign({ id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN,
+  });
 };
+
+const saveTokenCookie = (token, res, req) => {
+  res.cookie("jwt", token, {
+    maxAge: 24 * 60 * 60 * 1000,
+    httpOnly: true,
+    secure: req.protocol === "https" ? true : false,
+  });
+};
+
+const signup = catchErrorAsync(async (req, res, next) => {
+  const newUser = await User.create(req.body);
+
+  const token = createToken(newUser._id);
+
+  saveTokenCookie(token, res, req);
+
+  res.status(200).json({
+    status: "success",
+    token: token,
+    data: newUser,
+  });
+});
+
 const signIn = async (req, res, next) => {
   try {
     const user = await User.findOne({ name: req.body.name });
