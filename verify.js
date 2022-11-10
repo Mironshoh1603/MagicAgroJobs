@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const error = require("./controller/error");
+const error = require("./controller/errorController");
 module.exports = verifyToken = (req, res, next) => {
   const userToken = req.cookies.token;
   if (!userToken) {
@@ -15,4 +15,3 @@ module.exports = verifyToken = (req, res, next) => {
     next();
   });
 };
-

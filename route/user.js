@@ -1,12 +1,12 @@
 const router = require("express").Router();
 const user = require("./../controller/user");
-
-router.route("/").get(user.getAll).post(user.add);
+const verify = require("./../verify");
+router.route("/").get(verify, user.getAll).post(verify, user.add);
 
 router
   .route("/:id")
   .get(user.getOne)
-  .patch(user.update)
-  .delete(user.deleteData);
+  .patch(verify, user.update)
+  .delete(verify, user.deleteData);
 
 module.exports = router;

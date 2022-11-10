@@ -1,5 +1,6 @@
 const User = require("./../model/user");
-
+const AppError = require("../utility/appError");
+const error = require("./errorController");
 const getOne = async (req, res, next) => {
   try {
     const user = await User.findById(req.params.id);
@@ -20,6 +21,10 @@ const getAll = async (req, res, next) => {
 
 const add = async (req, res, next) => {
   try {
+    const role = await User.findById(req.user.id);
+    if (role.role != "admin") {
+      return next(new AppError("SIz admin emassiz", 404));
+    }
     const user = await User.create(req.body);
 
     res.status(201).json(user);
@@ -29,6 +34,11 @@ const add = async (req, res, next) => {
 };
 const update = async (req, res, next) => {
   try {
+    if (req.params.id != req.user.id) {
+      return next(
+        new AppError("Siz faqat o'zingizni hisobingizni o'chira olasiz", 404)
+      );
+    }
     const user = await User.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
@@ -41,6 +51,11 @@ const update = async (req, res, next) => {
 
 const deleteData = async (req, res, next) => {
   try {
+    if (req.params.id != req.user.id) {
+      return next(
+        new AppError("Siz faqat o'zingizni hisobingizni o'chira olasiz", 404)
+      );
+    }
     await User.findByIdAndDelete(req.params.id);
 
     res.status(204).json("okay");

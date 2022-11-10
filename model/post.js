@@ -7,6 +7,17 @@ const postSchema = mongoose.Schema({
   body: {
     type: String,
     required: true,
-    },
-  
+  },
+
+  price: {
+    type: Number,
+    required: true,
+  },
+  userId: {
+    type: mongoose.Schema.ObjectId,
+  },
 });
+
+const Post = mongoose.model("posts", postSchema);
+
+module.exports = Post;
