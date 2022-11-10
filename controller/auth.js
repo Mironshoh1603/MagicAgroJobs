@@ -1,53 +1,17 @@
-const User = require("../models/userModel");
-const catchErrorAsync = require("../utility/catchErrorAsync");
+const User = require("./../model/user");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const AppError = require("../utility/appError");
 const bcrypt = require("bcryptjs");
-const mail = require("../utility/mail");
-const crypto = require("crypto");
-
-const createToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXPIRES_IN,
-  });
-};
-
-const saveTokenCookie = (token, res, req) => {
-  res.cookie("jwt", token, {
-    maxAge: 24 * 60 * 60 * 1000,
-    httpOnly: true,
-    secure: req.protocol === "https" ? true : false,
-  });
-};
-
-const signup = catchErrorAsync(async (req, res, next) => {
-  const newUser = await User.create(req.body);
-
-  const token = createToken(newUser._id);
-
-  saveTokenCookie(token, res, req);
-
-  res.status(200).json({
-    status: "success",
-    token: token,
-    data: newUser,
-  });
-});
-
-const signIn = async (req, res, next) => {
+const signUp = async (req, res, next) => {
   try {
-    const user = await User.findOne({ name: req.body.name });
-    if (!user) {
-      return next(createError(404, "Usr not found"));
-    }
+    const salt = bcrypt.genSaltSync(10);
+    const hash = bcrypt.hashSync(req.body.password, salt);
+    const newUser = new User({ ...req.body, password: hash });
+    await newUser.save({ validateBeforeSave: true });
+    const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);
 
-    const isCorrect = await bcrypt.compare(req.body.password, user.password);
-    if (!isCorrect) {
-      return next(createError(404, "Wrong pAssword"));
-    }
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
-
-    const { password, ...others } = user._doc;
+    const { password, ...others } = newUser._doc;
     res
       .cookie("token", token, {
         httpOnly: true,
@@ -59,39 +23,50 @@ const signIn = async (req, res, next) => {
       });
   } catch (err) {
     console.log(err);
-    return next(err);
+    next(createError(404, "not found"));
   }
 };
+const signIn = async (req, res, next) => {
+  // 1) Email bilan password borligini tekshirish
 
-const google = async (req, res, next) => {
-  try {
-    const user = await User.findOne({ email: req.body.email });
-    if (user) {
-      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
-      res
-        .cookie("token", token, {
-          httpOnly: true,
-        })
-        .status(200)
-        .json(user._doc);
-    } else {
-      const newUser = new User({
-        ...req.body,
-        fromGoogle: true,
-      });
-      const savedUser = await newUser.save();
-      console.log(savedUser);
-      const token = jwt.sign({ id: savedUser._id }, process.env.JWT_SECRET);
-      res
-        .cookie("token", token, {
-          httpOnly: true,
-        })
-        .status(200)
-        .json(savedUser._doc);
-    }
-  } catch (error) {
-    next(error);
+  const { email, password } = { ...req.body };
+  console.log("hello");
+  console.log(email, password);
+  if (!email || !password) {
+    return next(new AppError("Email yoki passwordni kiriting! Xato!!!", 401));
   }
+
+  // 2) Shunaqa odam bormi yuqmi shuni tekshirish
+  const user = await User.findOne({ email: email });
+  if (!user) {
+    return next(
+      new AppError("Bunday user mavjud emas. Iltimos royxatdan uting!", 404)
+    );
+  }
+
+  // 3) password tugri yokin notugriligini tekshirish
+  const tekshirHashga = async (oddiyPassword, hashPassword) => {
+    const tekshir = await bcrypt.compare(oddiyPassword, hashPassword);
+    return tekshir;
+  };
+
+  if (!(await tekshirHashga(password, user.password))) {
+    return next(
+      new AppError(
+        "Sizning parol yoki loginingiz xato! Iltimos qayta urinib kuring!",
+        401
+      )
+    );
+  }
+  // 4) JWT token yasab berish
+  const token = createToken(user._id);
+
+  saveTokenCookie(token, res, req);
+  // 5) Response qaytarish
+  res.status(200).json({
+    status: "success",
+    token: token,
+  });
 };
 
-module.exports = { signIn, signUp, google };
+module.exports = { signIn, signUp };
