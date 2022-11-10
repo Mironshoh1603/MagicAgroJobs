@@ -2,7 +2,6 @@ const User = require("./../model/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const AppError = require("../utility/appError");
-const bcrypt = require("bcryptjs");
 const signUp = async (req, res, next) => {
   try {
     const salt = bcrypt.genSaltSync(10);
@@ -23,15 +22,13 @@ const signUp = async (req, res, next) => {
       });
   } catch (err) {
     console.log(err);
-    next(createError(404, "not found"));
+    next(new AppError(err));
   }
 };
 const signIn = async (req, res, next) => {
   // 1) Email bilan password borligini tekshirish
 
   const { email, password } = { ...req.body };
-  console.log("hello");
-  console.log(email, password);
   if (!email || !password) {
     return next(new AppError("Email yoki passwordni kiriting! Xato!!!", 401));
   }
@@ -59,14 +56,17 @@ const signIn = async (req, res, next) => {
     );
   }
   // 4) JWT token yasab berish
-  const token = createToken(user._id);
+  const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
 
-  saveTokenCookie(token, res, req);
   // 5) Response qaytarish
-  res.status(200).json({
-    status: "success",
-    token: token,
-  });
+  res
+    .cookie("token", token, {
+      httpOnly: true,
+    })
+    .status(200)
+    .json({
+      token,
+    });
 };
 
 module.exports = { signIn, signUp };
