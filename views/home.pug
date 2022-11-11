@@ -1,0 +1,204 @@
+extends base
+block content
+    .banner.header-text
+        .owl-banner.owl-carousel
+            .banner-item-01
+                .text-content
+                    h4 Biz bilan tez ish toping
+                    h2
+                        | Qishloq xo&apos;jaligida o&apos;zingiz yashayotgan hududda ishlash
+                        | imkoniyati
+            .banner-item-02
+                .text-content
+                    h4 Bizning sayt ishga joylashish uchun eng yaxshi sayt
+                    h2 Karyerangizni MagicAgro orqali o&apos;stiring
+            .banner-item-03
+                .text-content
+                    h4 Biz siz uchun ishlaymiz
+                    h2
+                        | Bizning yordamimizda qishloq xo&apos;jaligida o&apos;zingizga mos keladigan
+                        | ishni toping
+    .latest-products
+        .container
+            .row
+                .col-md-12
+                    .section-heading
+                        h2 Zo&apos;r Ishlar
+                        a(href='/jobs')
+                            | ko&apos;proq ko&apos;rish
+                            i.fa.fa-angle-right
+                .col-md-4
+                    .product-item
+                        a(href='job-details.html')
+                            img.img-fluid(src='assets/images/product-1-370x270.jpg' alt='')
+                        .down-content
+                            a(href='job-details.html')
+                                h4 O&apos;simliklarga yetishtirish
+                            h6 $500
+                            h4
+                            small
+                                i.fa.fa-briefcase
+                                |  Agrar / Dalada
+                                br
+                                strong
+                                i.fa.fa-building
+                                |  Yunusobod tumani
+                            small
+                                strong(title='Posted on')
+                                    i.fa.fa-calendar
+                                    |  11-11-2022
+                                strong(title='Location')
+                                    i.fa.fa-map-marker
+                                    | Toshkent shahri
+                .col-md-4
+                    .product-item
+                        img.img-fluid(src='assets/images/product-2-370x270.jpg' alt='')
+                        .down-content
+                            a(href='job-details.html')
+                                h4 Dalalarga o&apos;g&apos;it sepish
+                            h6 $600
+                            h4
+                            small
+                                i.fa.fa-briefcase
+                                |  Agrar / Dalada
+                                br
+                                strong
+                                i.fa.fa-building
+                                |  Qo&apos;shrobot tumani
+                            small
+                                strong(title='Posted on')
+                                    i.fa.fa-calendar
+                                    |  12-11-2022
+                                strong(title='Location')
+                                    i.fa.fa-map-marker
+                                    |  Samarqand viloyati
+                .col-md-4
+                    .product-item
+                        a(href='job-details.html')
+                            img(src='assets/images/product-3-370x270.jpg' alt='')
+                        .down-content
+                            a(href='job-details.html')
+                                h4 Hosilni yig&apos;ishtirish
+                            h6 $600
+                            h4
+                            small
+                                i.fa.fa-briefcase
+                                |  Agrar / Dalada
+                                br
+                                strong
+                                i.fa.fa-building
+                                |  Yangiariq tumani
+                            small
+                                strong(title='Posted on')
+                                    i.fa.fa-calendar
+                                    |  13-12-2022
+                                strong(title='Location')
+                                    i.fa.fa-map-marker
+                                    |  Xorazm viloyati
+    .best-features
+        .container
+            .row
+                .col-md-12
+                    .section-heading
+                        h2 Biz haqimizda
+                .col-md-6
+                    .left-content
+                        p
+                            | Biz qishloq xo&apos;jaligida ish beruvchilar va ish izlovchilarni
+                            | bir-biri bilan birlashishiga yordam beramiz. Siz bizning
+                            | saytimiz orqali tez va oson ish yoki ioshchi topishingiz mumkin.
+                            | O&apos;zbekistonda qishloq xo&apos;jaligidagi birinchi ish izlash
+                            | saytimiz.
+                        ul.featured-list
+                            li
+                            a(href='#') Tez va oson ish topish
+                            li
+                            a(href='#') Tez va oson ishchi topish
+                            li
+                            a(href='#') O&apos;zingizning tumaningizda qishloq xo&apos;jaligida ishlang
+                            li
+                            a(href='#') Yoki, O&apos;zbekistonning xohlagan joyida
+                        a.filled-button(href='about-us.html') Ko&apos;proq
+                .col-md-6
+                    .right-image
+                        img(src='assets/images/about-1-570x350.jpg' alt='')
+    .happy-clients
+        .container
+            .row
+                .col-md-12
+                    .section-heading
+                        h2 Foydalanuvchilar fikrlari
+                        a(href='testimonials.html')
+                            | Ko&apos;proq 
+                            i.fa.fa-angle-right
+                .col-md-12
+                    .owl-clients.owl-carousel.text-center
+                        .service-item
+                            .icon
+                                i.fa.fa-user
+                            .down-content
+                                h4 Jamshid Kalandarov
+                                p.n-m
+                                    em
+                                        | &quot;Sayt haqiqatda juda zo&apos;r qilingan. Men shu oyni ichida
+                                        | 3ta ish topishga ulgurdim&quot;
+                        .service-item
+                            .icon
+                                i.fa.fa-user
+                            .down-content
+                                h4 Mironshoh Asadov
+                                p.n-m
+                                    em
+                                        | &quot;Platforma jamoasiga rahmat katta. Doimiy bo&apos;lmasa ham
+                                        | yetarlicha ish topishimga yordam berishdi.&quot;
+                        .service-item
+                            .icon
+                                i.fa.fa-user
+                            .down-content
+                                h4 Abbos G&apos;ulomov
+                                p.n-m
+                                    em
+                                        | &quot;Men bu yil MagicAgroda reklama berganligim sababli,
+                                        | hosilimni hech qanaqa muammosiz yig&apos;ishtirishga
+                                        | erishdim.&quot;
+                        .service-item
+                            .icon
+                                i.fa.fa-user
+                            .down-content
+                                h4 Jamshid Kalandarov
+                                p.n-m
+                                    em
+                                        | &quot;Sayt haqiqatda juda zo&apos;r qilingan. Men shu oyni ichida
+                                        | 3ta ish topishga ulgurdim&quot;
+                        .service-item
+                            .icon
+                                i.fa.fa-user
+                            .down-content
+                                h4 Mironshoh Asadov
+                                p.n-m
+                                    em
+                                        | &quot;Platforma jamoasiga rahmat katta. Doimiy bo&apos;lmasa ham
+                                        | yetarlicha ish topishimga yordam berishdi.&quot;
+                        .service-item
+                            .icon
+                                i.fa.fa-user
+                            .down-content
+                                h4 Abbos G&apos;ulomov
+                                p.n-m
+                                    em
+                                        | &quot;Men bu yil MagicAgroda reklama berganligim sababli,
+                                        | hosilimni hech qanaqa muammosiz yig&apos;ishtirishga
+                                        | erishdim.&quot;
+    .call-to-action
+        .container
+            .row
+                .col-md-12
+                    .inner-content
+                        .row
+                            .col-md-8
+                                h4 Savol va takliflaringiz bo&apos;lsa biz bilan bog&apos;laning
+                                p
+                                    | Biz bundan juda xursand bo&apos;lamiz va sizga iloji boricha
+                                    | tezroq javob qaytarishga harakat qilamiz.
+                            .col-lg-4.col-md-6.text-right
+                                a.filled-button(href='contact.html') Aloqa

@@ -2,6 +2,8 @@ const express = require("express");
 const user = require("./../route/user");
 const auth = require("./../route/auth");
 const post = require("./../route/post");
+
+const view = require("./../route/view");
 const path = require("path");
 const AppError = require("../utility/appError");
 const ErrorController = require("../controller/errorController");
@@ -24,6 +26,8 @@ app.use(express.static("public"));
 app.use("/api/v1/users", user);
 app.use("/api/v1/auth", auth);
 app.use("/api/v1/posts", post);
+app.use("/", view);
+
 app.all("*", function (req, res, next) {
   next(new AppError(`this url has not found: ${req.originalUrl}`, 404));
 });
