@@ -1,4 +1,3 @@
-const { findById } = require("./../model/post");
 const Post = require("./../model/post");
 
 const AppError = require("./../utility/appError");
@@ -42,7 +41,6 @@ const deletePost = async (req, res, next) => {
       new AppError("Siz faqat o'zingizning postlaringizni o'chira olasiz")
     );
   }
-
   await Post.findByIdAndDelete(req.params.id);
   res.status(204).json("okay");
 };
