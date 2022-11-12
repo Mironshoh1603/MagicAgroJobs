@@ -26,6 +26,7 @@ const jobDetail = async (req, res, next) => {
 };
 const contact = async (req, res, next) => {
   try {
+    console.log("hello");
     res.render("contact");
   } catch (error) {
     console.log(error);
