@@ -29,7 +29,7 @@ app.use(express.static("public"));
 // app.use("/", viewRouter);
 app.use("/api/v1/users", user);
 app.use("/api/v1/auth", auth);
-app.use("/api/v1/posts", job);
+app.use("/api/v1/jobs", job);
 app.use("/api/v1/apply", apply);
 app.use("/api/v1/type", type);
 app.use("/api/v1/comments", comment);

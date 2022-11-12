@@ -23,14 +23,14 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    regionId: {
-      type: mongoose.Schema.ObjectId,
-      required: true,
-    },
-    districtId: {
-      type: mongoose.Schema.ObjectId,
-      required: true,
-    },
+    // regionId: {
+    //   type: mongoose.Schema.ObjectId,
+    //   required: true,
+    // },
+    // districtId: {
+    //   type: mongoose.Schema.ObjectId,
+    //   required: true,
+    // },
     role: {
       type: String,
       enum: ["worker", "employer", "admin"],

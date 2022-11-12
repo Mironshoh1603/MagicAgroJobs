@@ -1,22 +1,38 @@
 const Region = require("./../model/region");
-const regionData = require("./../data/region");
-const region = require("./../data/region");
-const add = async (req, res, next) => {
+const District = require("./../model/district");
+
+// const add = async (req, res, next) => {
+//   try {
+//     console.log("hello");
+//     const regions = await District.create(regionData);
+//     res.status(200).json(regions);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+const get = async (req, res, next) => {
   try {
-    const regions = await Region.create(regionData);
+    const regions = await Region.find().populate({
+      path: "districts",
+      select: "name_uz -_id -region_id",
+    });
     res.status(200).json(regions);
   } catch (error) {
     console.log(error);
   }
 };
 
-const get = async (req, res, next) => {
-    try {
-      
-        
+const getOne = async (req, res, next) => {
+  try {
+    const regions = await Region.findById(req.params.id).populate({
+      path: "districts",
+      select: "name_uz -_id -region_id",
+    });
+    res.status(200).json(regions);
   } catch (error) {
     console.log(error);
   }
 };
 
-module.exports = { add, get };
+module.exports = { get, getOne };
