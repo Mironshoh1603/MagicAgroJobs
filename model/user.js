@@ -24,18 +24,18 @@ const userSchema = mongoose.Schema(
       required: true,
     },
     regionId: {
-      type: mongoose.Schema.ObjectId,
+      type: String,
       required: true,
     },
     districtId: {
-      type: mongoose.Schema.ObjectId,
+      type: String,
       required: true,
     },
     role: {
       type: String,
       enum: ["worker", "employer", "admin"],
     },
-    img: {
+    photo: {
       type: String,
       default: "user",
     },

@@ -2,10 +2,12 @@ const User = require("./../model/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const AppError = require("../utility/appError");
+
 const signUp = async (req, res, next) => {
   try {
-    const salt = bcrypt.genSaltSync(10);
-    const hash = bcrypt.hashSync(req.body.password, salt);
+    const salt = await bcrypt.genSaltSync(10);
+    console.log(req.body);
+    const hash = await bcrypt.hashSync(req.body.password, salt);
     const newUser = new User({ ...req.body, password: hash });
     await newUser.save({ validateBeforeSave: true });
     const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);

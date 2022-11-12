@@ -1,6 +1,10 @@
 const User = require("./../model/user");
 const AppError = require("../utility/appError");
-const error = require("./errorController");
+const multer = require("multer");
+const sharp = require("sharp");
+
+
+
 const getOne = async (req, res, next) => {
   try {
     const user = await User.findById(req.params.id);

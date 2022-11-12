@@ -13,22 +13,28 @@ const AppError = require("../utility/appError");
 const ErrorController = require("../controller/errorController");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
+const fileUpload = require("express-fileupload");
+var bodyParser = require("body-parser");
 const app = express();
-
+app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(fileUpload({ useTempFiles: true }));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "../views"));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
 
 app.use(express.static("public"));
 
 // app.use("/", viewRouter);
+
 app.use("/api/v1/users", user);
-app.use("/api/v1/auth", auth);
+app.use("/api/v1/auth", (req, res, next) => {
+  console.log(req.body);
+});
 app.use("/api/v1/jobs", job);
 app.use("/api/v1/applies", apply);
 app.use("/api/v1/types", type);
