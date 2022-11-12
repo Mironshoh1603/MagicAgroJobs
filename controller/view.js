@@ -1,4 +1,4 @@
-const Post = require("./../model/post");
+const Post = require("../model/job");
 const User = require("./../model/user");
 
 const home = async (req, res, next) => {

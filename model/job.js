@@ -1,26 +1,33 @@
 const mongoose = require("mongoose");
-
-const userSchema = mongoose.Schema(
+const jobSchema = mongoose.Schema(
   {
-    name: {
+    title: {
       type: String,
       required: true,
     },
-    surname: {
+    body: {
       type: String,
       required: true,
     },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    phone: {
+
+    price: {
       type: Number,
       required: true,
     },
-    password: {
+    img: {
       type: String,
+      required: true,
+    },
+    userId: {
+      type: mongoose.Schema.ObjectId,
+      required: true,
+    },
+    commentId: {
+      type: mongoose.Schema.ObjectId,
+      required: true,
+    },
+    typeId: {
+      type: mongoose.Schema.ObjectId,
       required: true,
     },
     regionId: {
@@ -31,15 +38,10 @@ const userSchema = mongoose.Schema(
       type: mongoose.Schema.ObjectId,
       required: true,
     },
-    role: {
-      type: String,
-      enum: ["worker", "employer", "admin"],
-    },
   },
-  {
-    timestamps: true,
-  }
+  { timestamps: true }
 );
-const User = mongoose.model("users", userSchema);
 
-module.exports = User;
+const Job = mongoose.model("jobs", jobSchema);
+
+module.exports = Job;
