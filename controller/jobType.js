@@ -5,8 +5,9 @@ const add = async (req, res, next) => {
   try {
     const type = await Type.create({
       name: req.body.name,
-      userId: req.userId,
+      userId: req.user.id,
     });
+    res.status(201).json(type);
   } catch (error) {
     console.log(error);
   }

@@ -15,7 +15,7 @@ const add = async (req, res, next) => {
   try {
     const comment = await Comment.create({
       content: req.body.content,
-      jobId: req.params.id,
+      jobId: req.params.jobId,
       userId: req.user.id,
     });
     res.status(201).json(comment);

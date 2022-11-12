@@ -15,7 +15,7 @@ const add = async (req, res, next) => {
   try {
     const apply = await Apply.create({
       userId: req.user.id,
-      jobId: req.params.id,
+      jobId: req.params.jobId,
     });
 
     res.status(201).json(apply);

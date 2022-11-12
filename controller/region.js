@@ -15,7 +15,6 @@ const get = async (req, res, next) => {
   try {
     const regions = await Region.find().populate({
       path: "districts",
-      select: "name_uz -_id -region_id",
     });
     res.status(200).json(regions);
   } catch (error) {

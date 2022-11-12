@@ -22,10 +22,6 @@ const jobSchema = mongoose.Schema(
       type: mongoose.Schema.ObjectId,
       required: true,
     },
-    commentId: {
-      type: mongoose.Schema.ObjectId,
-      required: true,
-    },
     typeId: {
       type: mongoose.Schema.ObjectId,
       required: true,
