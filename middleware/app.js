@@ -32,9 +32,7 @@ app.use(express.static("public"));
 // app.use("/", viewRouter);
 
 app.use("/api/v1/users", user);
-app.use("/api/v1/auth", (req, res, next) => {
-  console.log(req.body);
-});
+app.use("/api/v1/auth", auth);
 app.use("/api/v1/jobs", job);
 app.use("/api/v1/applies", apply);
 app.use("/api/v1/types", type);

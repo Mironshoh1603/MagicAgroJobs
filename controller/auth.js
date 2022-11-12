@@ -5,10 +5,13 @@ const AppError = require("../utility/appError");
 
 const signUp = async (req, res, next) => {
   try {
-    const salt = await bcrypt.genSaltSync(10);
     console.log(req.body);
+    const salt = await bcrypt.genSaltSync(10);
     const hash = await bcrypt.hashSync(req.body.password, salt);
     const newUser = new User({ ...req.body, password: hash });
+    if (req.file) {
+      newUser.photo=req.file.path
+    }
     await newUser.save({ validateBeforeSave: true });
     const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);
 
