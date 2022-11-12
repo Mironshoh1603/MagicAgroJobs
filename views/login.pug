@@ -1,17 +1,18 @@
 extends base 
 block content 
     .container.pt-5
-        form.d-flex.justify-content-center.align-items-center.pt-5(action='')
+        form.form.d-flex.justify-content-center.align-items-center.pt-5(action='')
             .row.gap-3
                 .form-group.col-lg-12.col-sm-12
                     label(for='email')
                         | Elektron Pochta
                         span.text-danger (Required)
-                    input.form-control(type='email' required='')
+                    input.form-control(type='email' id='email' required='')
                 .form-group.col-lg-12.col-sm-12
                     label(for='direction')
                         | Parol 
                         span.text-danger (Required)
-                    input.form-control(type='password' required='')
+                    input.form-control(type='password' id='password' required='')
                 .form-group.col-lg-12.col-sm-12.d-flex.justify-content-center.pb-3
                     button.btn.btn-primary(type='submit') Register
+    script(src="assets/js/login.js") 

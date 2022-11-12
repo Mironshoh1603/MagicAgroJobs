@@ -34,7 +34,6 @@ const contact = async (req, res, next) => {
 };
 const login = async (req, res, next) => {
   try {
-    console.log(regions);
     res.render("login", {});
   } catch (error) {
     console.log(error);

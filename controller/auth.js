@@ -5,12 +5,11 @@ const AppError = require("../utility/appError");
 
 const signUp = async (req, res, next) => {
   try {
-    console.log(req.body);
     const salt = await bcrypt.genSaltSync(10);
     const hash = await bcrypt.hashSync(req.body.password, salt);
     const newUser = new User({ ...req.body, password: hash });
     if (req.file) {
-      newUser.photo=req.file.path
+      newUser.photo = req.file.path;
     }
     await newUser.save({ validateBeforeSave: true });
     const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);
@@ -32,7 +31,6 @@ const signUp = async (req, res, next) => {
 };
 const signIn = async (req, res, next) => {
   // 1) Email bilan password borligini tekshirish
-
   const { email, password } = { ...req.body };
   if (!email || !password) {
     return next(new AppError("Email yoki passwordni kiriting! Xato!!!", 401));
@@ -40,6 +38,8 @@ const signIn = async (req, res, next) => {
 
   // 2) Shunaqa odam bormi yuqmi shuni tekshirish
   const user = await User.findOne({ email: email });
+  console.log(user);
+
   if (!user) {
     return next(
       new AppError("Bunday user mavjud emas. Iltimos royxatdan uting!", 404)
