@@ -23,6 +23,10 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    passwordConfirm: {
+      type: String,
+      required: true,
+    },
     regionId: {
       type: String,
       required: true,
