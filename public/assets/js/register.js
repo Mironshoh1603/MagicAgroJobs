@@ -1,6 +1,28 @@
-console.log("hello");
-const registerForm = document.querySelector(".registerForm");
-console.log(registerForm);
+const district = document.querySelector("#districtInput");
+
+const districts = async (regionId) => {
+  try {
+    const res = await axios.get(
+      `http://localhost:8000/api/v1/regions/${regionId}`
+    );
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const region = document.querySelector("#regionInput");
+region.addEventListener("change", async () => {
+  const res = await districts(regionInput.value);
+
+  for (let i = 0; i < res.data.districts.length; i++) {
+    let opt = document.createElement("option");
+    opt.value = res.data.districts[i]._id;
+    opt.innerHTML = res.data.districts[i].name_uz;
+    district.appendChild(opt);
+  }
+});
+
 const register = async (
   name,
   surname,
@@ -14,7 +36,7 @@ const register = async (
   photo
 ) => {
   try {
-    const res = await axios.post("http://localhost:8000/auth/signup", {
+    const res = await axios.post("http://127.0.0.1:8000/api/v1/auth/signup", {
       name: name,
       surname: surname,
       email: email,
@@ -30,46 +52,45 @@ const register = async (
     if (res.status === 200) {
       alert("Siz ro`yxatdan o`tdingiz. Telegram kanalimizga qo`shiling");
       window.setTimeout(() => {
-        location.assign("https://t.me/Abduraxmanov_Abdulaziz");
+        location.assign("http://127.0.0.1:8000/jobs");
       }, 1000);
     } else {
       console.log(err.response.data.message);
-      alert(`Xatolik yuz berdi.
+      alert(`Xatolik yuz berdi.200 emas
     Error: ${err.response.data.message}`);
     }
   } catch (err) {
-    console.log(err.response.data.message);
-    alert(`Xatolik yuz berdi.
+    console.log(err);
+    alert(`Xatolik yuz berdi.xati
     Error: ${err.response.data.message}`);
   }
 };
 
+const registerForm = document.querySelector(".registerForm");
+
 registerForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = document.querySelector(".name").value;
-  const surName = document.querySelector(".surName").value;
-  const birthDate = document.querySelector(".birthDate").value;
-  const phone = document.querySelector(".number").value;
-  const adress = document.querySelector(".address").value;
-  const faculty = document.querySelector(".faculty").value;
-  const direction = document.querySelector(".direction").value;
-  const grade = document.querySelector(".grade").value;
-  const course = document.querySelector(".course").value;
-  const startTime = document.querySelector(".startTime").value;
-  const english = document.querySelector(".english").value;
-  const math = document.querySelector(".math").value;
+  const surname = document.querySelector(".surname").value;
+  const email = document.querySelector(".email").value;
+  const phone = document.querySelector(".phone").value;
+  const password = document.querySelector(".password").value;
+  const passwordConfirm = document.querySelector(".passwordConfirm").value;
+  const regionId = region.value;
+  const districtId = district.value;
+  const role = document.querySelector(".role").value;
+  const photo = document.querySelector(".photo").value;
+
   register(
     name,
-    surName,
-    birthDate,
+    surname,
+    email,
     phone,
-    adress,
-    faculty,
-    direction,
-    grade,
-    course,
-    startTime,
-    english,
-    math
+    password,
+    passwordConfirm,
+    regionId,
+    districtId,
+    role,
+    photo
   );
 });

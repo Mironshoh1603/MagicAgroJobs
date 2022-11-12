@@ -1,0 +1,61 @@
+extends base
+block content 
+    .container.pt-5
+        form.registerForm.pt-5(action='')
+            .row.gap-3.justify-content-lg-around
+                .form-group.col-lg-5.col-sm-12
+                    label(for='name')
+                        | Ism 
+                        span.text-danger (Required)
+                    input.name.form-control(type='text' required='')
+                .form-group.col-lg-5.col-sm-12
+                    label(for='surname')
+                        | Familya 
+                        span.text-danger (Required)
+                    input.surname.form-control(type='text' required='')
+                .form-group.col-lg-5.col-sm-12
+                    label(for='email')
+                        | Elektron Pochta
+                        span.text-danger (Required)
+                    input.email.form-control(type='email' required='')
+                .form-group.col-lg-5.col-sm-12
+                    label(for='number')
+                        | Telefon nomer 
+                        span.text-danger (Required)
+                    input.phone.form-control(type='number' required='' value='+998-')
+                .form-group.col-lg-5.col-sm-12
+                    label(for='direction')
+                        | Parol 
+                        span.text-danger (Required)
+                    input.password.form-control(type='password' required='')
+                .form-group.col-lg-5.col-sm-12
+                    label(for='direction')
+                        | Parolni takrorlang 
+                        span.text-danger (Required)
+                    input.passwordConfirm.form-control(type='password' required='')
+                .form-group.col-lg-5.col-sm-12
+                    label(for='surname')
+                        | Viloyatingiz
+                        span.text-danger (Required)
+                    select.form-control(name='' id='regionInput')
+                        each region in regions
+                            option(value=`${region._id}`)= region.name_uz
+                .form-group.col-lg-5.col-sm-12
+                    label(for='surname')
+                        | Tumaningiz 
+                        span.text-danger (Required)
+                    select.form-control(name='' id='districtInput')
+                .form-group.col-lg-5.col-sm-12
+                    label(for='surname')
+                        | Kasbingiz 
+                        span.text-danger (Required)
+                    select.role.form-control(name='' id='')
+                        option(value='employer') Ish beruvchi
+                        option(value='worker') Ishchi
+                .form-group.col-lg-5.col-sm-12
+                    label(for='surname')
+                        | Rasmingiz 
+                    input.photo.form-control(type="file")
+                .form-group.col-lg-5.col-sm-12.d-flex.align-items-center.justify-content-center.pb-3
+                    button.btn.btn-primary(type='submit') Register
+    script(src="/assets/js/register.js") 

@@ -26,7 +26,7 @@ const getOne = async (req, res, next) => {
   try {
     const regions = await Region.findById(req.params.id).populate({
       path: "districts",
-      select: "name_uz -_id -region_id",
+      select: "name_uz _id -region_id",
     });
     res.status(200).json(regions);
   } catch (error) {

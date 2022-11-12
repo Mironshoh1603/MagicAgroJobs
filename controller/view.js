@@ -1,6 +1,6 @@
 const Post = require("../model/job");
 const User = require("./../model/user");
-
+const Region = require("./../model/region");
 const home = async (req, res, next) => {
   try {
     res.render("home");
@@ -34,7 +34,8 @@ const contact = async (req, res, next) => {
 };
 const login = async (req, res, next) => {
   try {
-    res.render("login");
+    console.log(regions);
+    res.render("login", {});
   } catch (error) {
     console.log(error);
   }
@@ -42,7 +43,13 @@ const login = async (req, res, next) => {
 
 const register = async (req, res, next) => {
   try {
-    res.render("register");
+    const regions = await Region.find().populate({
+      path: "districts",
+      select: "name_uz _id",
+    });
+    res.render("register", {
+      regions,
+    });
   } catch (error) {
     console.log(error);
   }
