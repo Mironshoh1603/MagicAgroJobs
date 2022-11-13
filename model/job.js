@@ -14,10 +14,6 @@ const jobSchema = mongoose.Schema(
       type: Number,
       required: true,
     },
-    img: {
-      type: String,
-      required: true,
-    },
     userId: {
       type: mongoose.Schema.ObjectId,
       required: true,
@@ -27,16 +23,46 @@ const jobSchema = mongoose.Schema(
       required: true,
     },
     regionId: {
-      type: mongoose.Schema.ObjectId,
+      type: String,
       required: true,
     },
     districtId: {
-      type: mongoose.Schema.ObjectId,
+      type: String,
       required: true,
     },
+    photo: {
+      type: String,
+      default: "user",
+    },
   },
-  { timestamps: true }
+  {
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
+    timestamps: true,
+  }
 );
+
+jobSchema.virtual("user", {
+  ref: "users",
+  localField: "userId",
+  foreignField: "_id",
+});
+jobSchema.virtual("type", {
+  ref: "types",
+  localField: "typeId",
+  foreignField: "_id",
+});
+jobSchema.virtual("region", {
+  ref: "regions",
+  localField: "regionId",
+  foreignField: "_id",
+});
+jobSchema.virtual("district", {
+  ref: "districts",
+  localField: "districtId",
+  foreignField: "_id",
+});
+
 
 const Job = mongoose.model("jobs", jobSchema);
 

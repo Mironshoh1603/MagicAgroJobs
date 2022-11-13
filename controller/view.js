@@ -3,6 +3,7 @@ const Region = require("./../model/region");
 const jwt = require("jsonwebtoken");
 const Job = require("../model/job");
 const Type = require("./../model/jobType");
+const District = require("./../model/district");
 const axios = require("axios");
 const userRole = async (req, res, next) => {
   let user;
@@ -39,7 +40,25 @@ const home = async (req, res, next) => {
 
 const jobs = async (req, res, next) => {
   try {
-    res.render("jobs");
+    let user = await userRole(req, res, next);
+    const jobs = await Job.find()
+      .populate({
+        path: "region",
+        select: "name_uz",
+      })
+      .populate({
+        path: "district",
+        select: "name_uz",
+      })
+      .populate({
+        path: "type",
+        select: "name",
+      });
+
+    res.render("jobs", {
+      user,
+      jobs,
+    });
   } catch (error) {
     console.log(error);
   }
@@ -47,15 +66,20 @@ const jobs = async (req, res, next) => {
 
 const jobDetail = async (req, res, next) => {
   try {
-    res.render("jobDetail");
+    let user = await userRole(req, res, next);
+    console.log(req.params.id);
+    res.render("jobDetail", { user });
   } catch (error) {
     console.log(error);
   }
 };
 const contact = async (req, res, next) => {
   try {
-    console.log("hello");
-    res.render("contact");
+    let user = await userRole(req, res, next);
+
+    res.render("contact", {
+      user,
+    });
   } catch (error) {
     console.log(error);
   }
@@ -96,8 +120,20 @@ const logout = async (req, res, next) => {
 };
 
 const createJob = async (req, res, next) => {
+  let user = await userRole(req, res, next);
+  const regions = await Region.find().populate({
+    path: "districts",
+    select: "name_uz _id",
+  });
+
+  const jobTypes = await Type.find();
+
   try {
-    res.render("createType");
+    res.render("createJob", {
+      user,
+      regions,
+      jobTypes,
+    });
   } catch (error) {
     console.log(error);
   }
