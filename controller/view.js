@@ -3,7 +3,7 @@ const Region = require("./../model/region");
 const jwt = require("jsonwebtoken");
 const Job = require("../model/job");
 const Type = require("./../model/jobType");
-
+const axios = require("axios");
 const userRole = async (req, res, next) => {
   let user;
 
@@ -108,12 +108,12 @@ const createType = async (req, res, next) => {
 
     const types = await Type.find().populate({
       path: "users",
-      select: "name",
+      select: "name createdAt",
     });
 
-    console.log(types);
     res.render("createType", {
       user,
+      types,
     });
   } catch (error) {
     console.log(error);

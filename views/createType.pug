@@ -21,8 +21,9 @@ block content
                                     th Qo'shgan odam
                                     th sanasi
                             tbody.table-column
-                                tr
-                                    td Texnika
-                                    td Senior
-                                    td bugun
+                                each jobtype in types
+                                    tr
+                                        td= jobtype.name
+                                        td= jobtype.users[0].name
+                                        td= jobtype.createdAt
     script(src="assets/js/type.js") 
