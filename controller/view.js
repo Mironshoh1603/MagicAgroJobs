@@ -66,8 +66,10 @@ const jobs = async (req, res, next) => {
 
 const jobDetail = async (req, res, next) => {
   try {
+
+   
+
     let user = await userRole(req, res, next);
-    console.log(req.params.id);
     res.render("jobDetail", { user });
   } catch (error) {
     console.log(error);

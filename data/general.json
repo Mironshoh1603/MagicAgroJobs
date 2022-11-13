@@ -1,0 +1,1368 @@
+[
+  {
+    "_id": "637086841db1affa79c47e95",
+    "name_uz": "Andijon viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe351867e",
+        "name_uz": "Andijon shahri",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351867f",
+        "name_uz": "Andijon tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518680",
+        "name_uz": "Asaka tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518683",
+        "name_uz": "Bo‘z tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518684",
+        "name_uz": "Jalaquduq tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518685",
+        "name_uz": "Izbosgan tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518686",
+        "name_uz": "Qorasuv shahri",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518689",
+        "name_uz": "Oltinko‘l tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518688",
+        "name_uz": "Marhamat tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518687",
+        "name_uz": "Qo‘rg‘ontepa tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351868a",
+        "name_uz": "Paxtaobod tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351868b",
+        "name_uz": "Ulug‘nor tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351868c",
+        "name_uz": "Xonabod tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351868d",
+        "name_uz": "Xo‘jaobod tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351868e",
+        "name_uz": "Shahrixon tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518681",
+        "name_uz": "Baliqchi tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518682",
+        "name_uz": "Buloqboshi tumani",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518732",
+        "name_uz": "Asaka shahri",
+        "region_id": "637086841db1affa79c47e95",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e95"
+  },
+  {
+    "_id": "637086841db1affa79c47e97",
+    "name_uz": "Jizzax viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe351869c",
+        "name_uz": "Arnasoy tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351869e",
+        "name_uz": "G‘allaorol tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351869d",
+        "name_uz": "Baxmal tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351869f",
+        "name_uz": "Do‘stlik tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a1",
+        "name_uz": "Jizzax shahri",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a2",
+        "name_uz": "Zarbdor tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a3",
+        "name_uz": "Zafarobod tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a4",
+        "name_uz": "Zomin tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a6",
+        "name_uz": "Paxtakor tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a7",
+        "name_uz": "Forish tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a8",
+        "name_uz": "Yangiobod tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a5",
+        "name_uz": "Mirzacho‘l tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a0",
+        "name_uz": "Sh.Rashidov tumani",
+        "region_id": "637086841db1affa79c47e97",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e97"
+  },
+  {
+    "_id": "637086841db1affa79c47e98",
+    "name_uz": "Qashqadaryo viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe35186aa",
+        "name_uz": "Dehqonobod tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ab",
+        "name_uz": "Qamashi tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186a9",
+        "name_uz": "G‘uzor tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ac",
+        "name_uz": "Qarshi tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ad",
+        "name_uz": "Qarshi shahri",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186af",
+        "name_uz": "Kitob tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ae",
+        "name_uz": "Kasbi tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b0",
+        "name_uz": "Koson tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b3",
+        "name_uz": "Nishon tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b1",
+        "name_uz": "Mirishkor tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b2",
+        "name_uz": "Muborak tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b4",
+        "name_uz": "Chiroqchi tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b5",
+        "name_uz": "Shahrisabz tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b6",
+        "name_uz": "Yakkabog‘ tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351873f",
+        "name_uz": "Ko‘kdala tumani",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351873e",
+        "name_uz": "Shahrisabz shahri",
+        "region_id": "637086841db1affa79c47e98",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e98"
+  },
+  {
+    "_id": "637086841db1affa79c47e99",
+    "name_uz": "Navoiy viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe35186b7",
+        "name_uz": "Zarafshon shahri",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b8",
+        "name_uz": "Karmana tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186b9",
+        "name_uz": "Qiziltepa tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ba",
+        "name_uz": "Konimex tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186bb",
+        "name_uz": "Navbahor tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186bc",
+        "name_uz": "Navoiy shahri",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186bd",
+        "name_uz": "Nurota tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186be",
+        "name_uz": "Tomdi tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c0",
+        "name_uz": "Xatirchi tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186bf",
+        "name_uz": "Uchquduq tumani",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351873c",
+        "name_uz": "G‘ozg‘on shahri",
+        "region_id": "637086841db1affa79c47e99",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e99"
+  },
+  {
+    "_id": "637086841db1affa79c47e9a",
+    "name_uz": "Namangan viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe35186c2",
+        "name_uz": "Mingbuloq tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c1",
+        "name_uz": "Kosonsoy tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c4",
+        "name_uz": "Namangan shahri",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c5",
+        "name_uz": "Norin tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c6",
+        "name_uz": "Pop tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c8",
+        "name_uz": "Uychi tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c9",
+        "name_uz": "Uchqo‘rg‘on tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ca",
+        "name_uz": "Chortoq tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186cb",
+        "name_uz": "Chust tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186cc",
+        "name_uz": "Yangiqo‘rg‘on tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c3",
+        "name_uz": "Namangan tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186c7",
+        "name_uz": "To‘raqo‘rg‘on tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351873b",
+        "name_uz": "Davlatobod tumani",
+        "region_id": "637086841db1affa79c47e9a",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e9a"
+  },
+  {
+    "_id": "637086841db1affa79c47e9b",
+    "name_uz": "Samarqand viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe35186cf",
+        "name_uz": "Ishtixon tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ce",
+        "name_uz": "Jomboy tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186cd",
+        "name_uz": "Bulung‘ur tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d3",
+        "name_uz": "Narpay tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d0",
+        "name_uz": "Kattaqo‘rg‘on tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d1",
+        "name_uz": "Kattaqo‘rg‘on shahri",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d2",
+        "name_uz": "Qo‘shrabot tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d4",
+        "name_uz": "Nurabod tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d5",
+        "name_uz": "Oqdaryo tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d8",
+        "name_uz": "Paxtachi tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d6",
+        "name_uz": "Payariq tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d7",
+        "name_uz": "Pastarg‘om tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186d9",
+        "name_uz": "Samarqand tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186da",
+        "name_uz": "Samarqand shahri",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186db",
+        "name_uz": "Toyloq tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186dc",
+        "name_uz": "Urgut tumani",
+        "region_id": "637086841db1affa79c47e9b",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e9b"
+  },
+  {
+    "_id": "637086841db1affa79c47e9c",
+    "name_uz": "Surxandaryo viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe35186dd",
+        "name_uz": "Angor tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186df",
+        "name_uz": "Denov tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186de",
+        "name_uz": "Boysun tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e0",
+        "name_uz": "Jarqo‘rg‘on tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e2",
+        "name_uz": "Qo‘mqo‘rg‘on tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e1",
+        "name_uz": "Qiziriq tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e3",
+        "name_uz": "Muzrabot tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e5",
+        "name_uz": "Sariosiyo tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e4",
+        "name_uz": "Oltinsoy tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e6",
+        "name_uz": "Termiz tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e7",
+        "name_uz": "Termiz shahri",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e9",
+        "name_uz": "Sherobod tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ea",
+        "name_uz": "Sho‘rchi tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186e8",
+        "name_uz": "Uzun tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518733",
+        "name_uz": "Bandixon tumani",
+        "region_id": "637086841db1affa79c47e9c",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e9c"
+  },
+  {
+    "_id": "637086841db1affa79c47e9d",
+    "name_uz": "Sirdaryo viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe35186eb",
+        "name_uz": "Boyovut tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ed",
+        "name_uz": "Guliston shahri",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ec",
+        "name_uz": "Guliston tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ee",
+        "name_uz": "Mirzaobod tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ef",
+        "name_uz": "Oqoltin tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f3",
+        "name_uz": "Xavos tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f2",
+        "name_uz": "Sirdaryo tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f1",
+        "name_uz": "Sardoba tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f4",
+        "name_uz": "Shirin shahri",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f5",
+        "name_uz": "Yangiyer shahri",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f0",
+        "name_uz": "Sayxunobod tumani",
+        "region_id": "637086841db1affa79c47e9d",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e9d"
+  },
+  {
+    "_id": "637086841db1affa79c47e9e",
+    "name_uz": "Toshkent viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe35186f7",
+        "name_uz": "Bekabod tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f6",
+        "name_uz": "Angiren shahri",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f9",
+        "name_uz": "Bo‘ka tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186f8",
+        "name_uz": "Bekabod shahri",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186fb",
+        "name_uz": "Zangiota tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186fd",
+        "name_uz": "Quyichirchiq tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186fa",
+        "name_uz": "Bo‘stonliq tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186fc",
+        "name_uz": "Qibray tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186ff",
+        "name_uz": "Olmaliq shahri",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518701",
+        "name_uz": "Parkent tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518703",
+        "name_uz": "O‘rtachirchiq tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518702",
+        "name_uz": "Piskent tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518700",
+        "name_uz": "Ohangaron tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518704",
+        "name_uz": "Chinoz tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518705",
+        "name_uz": "Chirchiq shahri",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518706",
+        "name_uz": "Yuqorichirchiq tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518707",
+        "name_uz": "Yangiyo‘l tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe35186fe",
+        "name_uz": "Oqqo‘rg‘on tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518734",
+        "name_uz": "Ohangaron shahri",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518736",
+        "name_uz": "Toshkent tumani",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518735",
+        "name_uz": "Yangiyo‘l shahri",
+        "region_id": "637086841db1affa79c47e9e",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e9e"
+  },
+  {
+    "_id": "637086841db1affa79c47e9f",
+    "name_uz": "Farg‘ona viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe3518708",
+        "name_uz": "Beshariq tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518709",
+        "name_uz": "Bog‘dod tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351870a",
+        "name_uz": "Buvayda tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351870c",
+        "name_uz": "Yozyovon tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351870d",
+        "name_uz": "Quva tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351870b",
+        "name_uz": "Dang‘ara tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351870f",
+        "name_uz": "Qo‘qon shahri",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351870e",
+        "name_uz": "Quvasoy shahri",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518710",
+        "name_uz": "Qo‘shtepa tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518711",
+        "name_uz": "Marg‘ilon shahri",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518712",
+        "name_uz": "Oltiariq tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518713",
+        "name_uz": "Rishton tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518714",
+        "name_uz": "So‘x tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518717",
+        "name_uz": "O‘zbekiston tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518719",
+        "name_uz": "Farg‘ona shahri",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518716",
+        "name_uz": "Uchko‘prik tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518715",
+        "name_uz": "Toshloq tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518718",
+        "name_uz": "Farg‘ona tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351871a",
+        "name_uz": "Furqat tumani",
+        "region_id": "637086841db1affa79c47e9f",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e9f"
+  },
+  {
+    "_id": "637086841db1affa79c47ea0",
+    "name_uz": "Xorazm viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe351871d",
+        "name_uz": "Qo‘shko‘pir tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351871c",
+        "name_uz": "Gurlan tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351871b",
+        "name_uz": "Bog‘ot tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351871f",
+        "name_uz": "Urganch shahri",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351871e",
+        "name_uz": "Urganch tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518725",
+        "name_uz": "Yangibozor tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518720",
+        "name_uz": "Xiva tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518721",
+        "name_uz": "Xazarasp tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518722",
+        "name_uz": "Xonqa tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518724",
+        "name_uz": "Yangiariq tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518723",
+        "name_uz": "Shavot tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518738",
+        "name_uz": "Do'stlik shahri",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518737",
+        "name_uz": "Xiva shahri",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351873a",
+        "name_uz": "Tuproqqala tumani",
+        "region_id": "637086841db1affa79c47ea0",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47ea0"
+  },
+  {
+    "_id": "637086841db1affa79c47ea1",
+    "name_uz": "Toshkent shahri",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe3518727",
+        "name_uz": "Mirzo Ulug'bek tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518728",
+        "name_uz": "Mirobod tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518729",
+        "name_uz": "Olmazor tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351872a",
+        "name_uz": "Sirg'ali tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351872b",
+        "name_uz": "Uchtepa tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351872c",
+        "name_uz": "Yashnobod tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351872d",
+        "name_uz": "Chilonzor tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351872f",
+        "name_uz": "Yunusobod tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518730",
+        "name_uz": "Yakkasaroy tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351872e",
+        "name_uz": "Shayxontohur tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518739",
+        "name_uz": "Yangihayot tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518726",
+        "name_uz": "Bektimer tumani",
+        "region_id": "637086841db1affa79c47ea1",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47ea1"
+  },
+  {
+    "_id": "637086841db1affa79c47e96",
+    "name_uz": "Buxoro viloyati",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe351868f",
+        "name_uz": "Buxoro shahri",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518690",
+        "name_uz": "Buxoro tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518691",
+        "name_uz": "Vobkent tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518692",
+        "name_uz": "G‘ijduvon tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518694",
+        "name_uz": "Kogon tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518693",
+        "name_uz": "Jondor tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518696",
+        "name_uz": "Qorako‘l tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518695",
+        "name_uz": "Kogon shahri",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518697",
+        "name_uz": "Qorovulbozor tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518699",
+        "name_uz": "Peshku tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518698",
+        "name_uz": "Olot tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351869b",
+        "name_uz": "Shofirkon tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351869a",
+        "name_uz": "Romitan tumani",
+        "region_id": "637086841db1affa79c47e96",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e96"
+  },
+  {
+    "_id": "637086841db1affa79c47e94",
+    "name_uz": "Qoraqalpog‘iston Respublikasi",
+    "__v": 0,
+    "districts": [
+      {
+        "_id": "637088697780c30fe3518671",
+        "name_uz": "Kegayli tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518672",
+        "name_uz": "Qonliko‘l tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518673",
+        "name_uz": "Qorao‘zak tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518674",
+        "name_uz": "Qo‘ng‘irot tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518675",
+        "name_uz": "Mo‘ynoq tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518676",
+        "name_uz": "Nukus tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518677",
+        "name_uz": "Nukus shahri",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518678",
+        "name_uz": "Taxtako‘pir tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351867a",
+        "name_uz": "Xo‘jayli tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518679",
+        "name_uz": "To‘rtko‘l tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351867d",
+        "name_uz": "Ellikqal‘a tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351867b",
+        "name_uz": "Chimboy tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351867c",
+        "name_uz": "Shumanay tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518670",
+        "name_uz": "Beruniy tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351866f",
+        "name_uz": "Amudaryo tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe3518731",
+        "name_uz": "Taxiatosh shahri",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      },
+      {
+        "_id": "637088697780c30fe351873d",
+        "name_uz": "Bo‘zatov tumani",
+        "region_id": "637086841db1affa79c47e94",
+        "__v": 0
+      }
+    ],
+    "id": "637086841db1affa79c47e94"
+  }
+]
