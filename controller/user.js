@@ -3,8 +3,6 @@ const AppError = require("../utility/appError");
 const multer = require("multer");
 const sharp = require("sharp");
 
-
-
 const getOne = async (req, res, next) => {
   try {
     const user = await User.findById(req.params.id);

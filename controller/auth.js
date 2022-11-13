@@ -35,8 +35,8 @@ const signIn = async (req, res, next) => {
   if (!email || !password) {
     return next(new AppError("Email yoki passwordni kiriting! Xato!!!", 401));
   }
-
   // 2) Shunaqa odam bormi yuqmi shuni tekshirish
+  console.log(email);
   const user = await User.findOne({ email: email });
   console.log(user);
 

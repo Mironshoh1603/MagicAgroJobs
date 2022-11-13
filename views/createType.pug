@@ -1,0 +1,28 @@
+extends base 
+block content 
+    .container.pt-5
+        form.formType.d-flex.justify-content-center.align-items-center.pt-5(action='')
+            .row.gap-3
+                .form-group.col-lg-12.col-sm-12
+                    label(for='text')
+                        | Nomi
+                        span.text-danger (Required)
+                    input.typeName.form-control(type='text' id='type' required='')
+                input.userType.d-none(type="text" value=`${user._id}`)
+                .form-group.col-lg-12.col-sm-12.d-flex.justify-content-center.pb-3
+                    button.btn.btn-primary(type='submit') Register
+        .row.g-4
+            .col-12
+                    .table-responsive-xs.table-responsive-sm
+                        table.table.align-middle.mb-0.bg-white
+                            thead.bg-light
+                                tr
+                                    th Nomi
+                                    th Qo'shgan odam
+                                    th sanasi
+                            tbody.table-column
+                                tr
+                                    td Texnika
+                                    td Senior
+                                    td bugun
+    script(src="assets/js/type.js") 

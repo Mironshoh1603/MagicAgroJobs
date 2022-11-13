@@ -8,13 +8,20 @@ const typeSchema = new mongoose.Schema(
     },
     userId: {
       type: mongoose.Schema.ObjectId,
+      ref: "users",
       required: true,
     },
   },
   {
-    timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   }
 );
+typeSchema.virtual("users", {
+  ref: "users",
+  foreignField: "_id",
+  localField: "userId",
+});
 
 const Type = mongoose.model("types", typeSchema);
 

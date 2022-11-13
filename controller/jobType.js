@@ -15,7 +15,7 @@ const add = async (req, res, next) => {
 
 const getAll = async (req, res, next) => {
   try {
-    const types = await Type.find();
+    const types = await Type.find().populate({ path: "users" });
     res.status(200).json(types);
   } catch (error) {
     console.log(error);

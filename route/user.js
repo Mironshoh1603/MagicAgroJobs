@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const user = require("./../controller/user");
 const verify = require("./../verify");
-router.route("/").get(verify, user.getAll).post(verify, user.add);
+router.route("/").get(user.getAll).post(verify, user.add);
 
 router
   .route("/:id")

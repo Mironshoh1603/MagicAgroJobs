@@ -1,15 +1,16 @@
 const Region = require("./../model/region");
 const District = require("./../model/district");
-
-// const add = async (req, res, next) => {
-//   try {
-//     console.log("hello");
-//     const regions = await District.create(regionData);
-//     res.status(200).json(regions);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
+const regionData = require("./../data/region");
+const districtData = require("./../data/district");
+const add = async (req, res, next) => {
+  try {
+    console.log("hello");
+    const regions = await District.create(districtData);
+    res.status(200).json(regions);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 const get = async (req, res, next) => {
   try {
@@ -34,4 +35,4 @@ const getOne = async (req, res, next) => {
   }
 };
 
-module.exports = { get, getOne };
+module.exports = { get, getOne, add };
